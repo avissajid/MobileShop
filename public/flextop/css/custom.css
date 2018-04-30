@@ -1,0 +1,61 @@
+/*
+
+.search_section_wrapper{margin-left: 120px !important;} line 196
+.top2{position: relative; padding: 25px 0;} line 187
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} line 1124 bootstrap.css
+
+.hello1{float: left;} line 93
+
+.search_section_wrapper {
+    width: 500px;
+    height: 40px;
+    float: left;
+    background: #fff;
+    margin-left: 35px;
+    margin-top: 14px;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    padding-left: 170px;
+    position: relative;
+    color: #333e48; line 196
+	
+.search-form-wrapper .form-control{border: none; border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px; padding-top: 10px; padding-bottom: 11px; height: 40px; color: #7e7e7e; background: none; padding-left: 20px; padding-right: 110px; font-size: 13px;}
+line 966
+
+.search-form-wrapper a{position: absolute; right: 0px; top: 0px; text-align: center; width: 100px; line-height: 40px; color: #333e48; background: #febf00; font-size: 14px; font-weight: 500; text-decoration: none; border-radius:0 25px 25px 0; -moz-border-radius:0 25px 25px 0; -webkit-border-radius:0 25px 25px 0;
+transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out;
+line 970
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 85%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: auto; bootstrap css 1124 line
+
+  line-height 0px; font-weight normal;  padding: 10px 2px;  line 908
+  .top2_wrapper{border-bottom: 0px solid #2d719d;}  line 184
+
+  padding-top: 1px; line 4213 bootstrap.css
+
+}
+
+
+
+
+
+*/
