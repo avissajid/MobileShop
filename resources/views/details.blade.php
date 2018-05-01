@@ -1,3 +1,9 @@
+@extends('master')
+
+  @section('content')
+
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -15,7 +21,8 @@
   <div id="DIV_1">
   <div id="DIV_2">
     <div id="DIV_3">
-      <a href="http://www.mysmartprice.com/mobile/pricelist/mobile-price-list-in-india.html" id="A_4">Mobile Phones</a> / Samsung / Samsung Galaxy S9 Price in India
+      <a href="http://www.mysmartprice.com/mobile/pricelist/mobile-price-list-in-india.html" id="A_4">Mobile Phones</a> / Samsung / 
+                      <?php echo ($data->model_name) ?> 
     </div>
     
   </div>
@@ -24,7 +31,8 @@
    
     <div id="DIV_26">
       
-
+             
+                      <?php echo ($data->details) ?>
      
      
     </div>
@@ -224,74 +232,11 @@
         </div>
       </div>
       <div id="DIV_170">
-          <div id="DIV_171">
-            <h2 id="H2_172">
-              <?php echo ($data->model_name) ?>
-            </h2>
-            <div id="DIV_173">
-            </div>
-            <div id="DIV_174">
-              <p id="P_175">
-                
-              </p>
-            </div>
-          </div>
-          <div id="DIV_178">
-            <div id="DIV_179">
-            </div>
-          </div>
-          <script type="text/javascript" id="SCRIPT_181">var pageOptions = { "pubId" : "partner-vert-pla-mysmartprice-pdp", "query" : "Samsung Galaxy S9", "adsafe" : "high", "adtest" : "off", "channel": "desktop-pdp", "hl" : "en" }; var afshBlock = { "container" : "afshcontainer", "width" : 700, "height" : 200, }; _googCsa("plas", pageOptions, afshBlock);
-          </script>
-          <div id="DIV_182">
-              <div id="DIV_183">
-                <h3 id="H3_184">
-                  <?php echo ($data->model_name) ?> Details
-                </h3>
-              </div>
-              <div id="DIV_185">
-                <div id="DIV_186">
-                  <div id="DIV_187">
-                    <div id="DIV_188">
-                      Introduction and Design
-                    </div>
-                    <div id="DIV_189">
-                      The Samsung Galaxy S9 is a high-end smartphone introduced by the South Korean handset makers. The device, like other Samsung devices, the volume keys are on the left and the power button on the right. The <a href="http://www.mysmartprice.com/mobile/pricelist/fingerprint-sensor-mobiles-in-india.html" id="A_190">fingerprint sensor</a> combined with a heart rate monitor is slotted at the back next to the rear camera. The Galaxy S9, similar to its predecessor is slim and ships with narrow bezels. Also, there is IP68 certification which makes the smartphone dust proof and <a href="http://www.mysmartprice.com/mobile/pricelist/waterproof-mobiles-in-india.html" id="A_191">water resistant</a>.
-                    </div>
-                  </div>
-                </div>
-                <div id="DIV_192">
-                  <div id="DIV_193">
-                    <div id="DIV_194">
-                      Performance and Camera
-                    </div>
-                    <div id="DIV_195">
-                      Users can expect top-notch performance on the Samsung Galaxy S9 as the device is armed with a 2.3GHz octa-core Exynos 9 chipset and <a href="http://www.mysmartprice.com/mobile/pricelist/samsung-4gb-ram-mobiles-in-india.html" id="A_196">4GB of RAM</a>. There are no performance concerns with applications or gaming. Even heavy mobile games and multitasking is taken care with ease. Thus, you can expect a smooth and lag-free smartphone experience.<br id="BR_197" /> For imaging, the smartphone is also well armed. It comes with dual 12-megapxiel rear shooters which are backed by a dual-tone LED flash that can handle low-light photos and videos. With optical image stabilization and phase detection autofocus, the imaging piece is capable of capturing good photos in most lighting conditions. On the front, there is an 8-megapxiel front-facing shooter for video calls and selfies.
-                    </div>
-                  </div>
-                </div>
-                <div id="DIV_198">
-                  <div id="DIV_199">
-                    <div id="DIV_200">
-                      Display and Battery
-                    </div>
-                    <div id="DIV_201">
-                      On top, there is a 6-inch QHD+ Super AMOLED display which is stunning and has vivid colour reproduction that makes videos and games more enjoyable than ever. Also, there is Corning's Gorilla Glass protection that prevents the screen from attracting any unwanted scratches.<br id="BR_202" /> The smartphone is fuelled by a non-removable Li-Ion 3,000mAh battery which is tipped to last longer than the <a href="http://www.mysmartprice.com/mobile/samsung-galaxy-s8-msp11404" id="A_203">Galaxy S8</a>. The battery on the Samsung Galaxy S9 also has support for fast charging.
-                    </div>
-                  </div>
-                </div>
-                <div id="DIV_204">
-                  <div id="DIV_205">
-                    <div id="DIV_206">
-                      Connectivity and Storage
-                    </div>
-                    <div id="DIV_207">
-                      Connectivity options on the Galaxy S9 remain unaltered to that of the Galaxy S8. For connectivity, there are options like <a href="http://www.mysmartprice.com/mobile/pricelist/4g-mobiles-in-india.html" id="A_208">4G</a>, Wi-Fi 802.11 a/b/g/n/ac, GPS, NFC, Bluetooth 5.0, and a USB Type-C port.<br id="BR_209" /> For storing files and data, one can use the 64GB of onboard storage which as per the user can be expanded via a microSD card using the Hybrid SIM slot up to 256GB.<br id="BR_210" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          <div id="DIV_211">
+          
+          
+          
+          
+           <div id="DIV_211">
               <h2 id="H2_212">
                 Samsung Galaxy S9 Specifications
               </h2>
@@ -1066,3 +1011,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
   </body>
 </html>
+@endsection

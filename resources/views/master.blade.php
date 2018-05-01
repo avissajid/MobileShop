@@ -269,47 +269,7 @@
       </div>
    </div>
    <!--Slider-->
-   <div id="slider_wrapper">
-      <div id="slider">
-         <div id="flexslider">
-            <ul class="slides clearfix">
-               <li>
-                  <img src="{{asset('flextop/images/slide01.jpg')}}" alt="">
-                  <div class="flex-caption">
-                     <!-- <div class="flex-caption_inner container">
-                        <div class="txt1">Sale up to 20% off!</div>
-                        <div class="txt2">Alienware Desktop</div>
-                        <div class="txt3">Save up to $599 off of select Alienware PCs for a limited time only.</div>
-                        <div class="txt4"><a href="#" class="btn-default btn0">Get it Now</a></div>
-                        </div> -->
-                  </div>
-               </li>
-               <li>
-                  <img src="{{asset('flextop/images/slide02.jpg')}}" alt="">
-                  <div class="flex-caption">
-                     <!-- <div class="flex-caption_inner container">
-                        <div class="txt1">Sale up to 30% off!</div>
-                        <div class="txt2">Futuro de la <br>Realidad virtual</div>
-                        <div class="txt3">Save up to $599 off of select La Realidad Virtual  for a limited time only.</div>
-                        <div class="txt4"><a href="#" class="btn-default btn0">Get it Now</a></div>
-                        </div> -->
-                  </div>
-               </li>
-               <li>
-                  <img src="{{asset('flextop/images/slide03.jpg')}}" alt="">
-                  <div class="flex-caption">
-                     <!-- <div class="flex-caption_inner container">
-                        <div class="hot-sale-wrapper"><span>Hot Sale</span></div>
-                        <div class="txt2">4K 360 video<br>Colorful designs</div>
-                        <div class="txt3">Now for manners use has company believe parlors. Least nor party<br>who wrote while did.</div>
-                        <div class="txt4"><a href="#" class="btn-default btn0">Get it Now</a></div>
-                        </div> -->
-                  </div>
-               </li>
-            </ul>
-         </div>
-      </div>
-   </div>
+  
       @yield('content')
      
       <!--Footer-->

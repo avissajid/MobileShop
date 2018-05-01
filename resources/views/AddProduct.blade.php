@@ -34,6 +34,12 @@
                   </select>
                </div>
             </div>
+                   <div class="form-group">
+            
+                    <a href="{{url('AddCategory')}}"><button type="button" class="btn btn-info">add new category</button></a>
+                 
+            </div>
+
             <div class="form-group">
                <label class="control-label col-xs-3  " for="brand">Brands:</label>
                <div class="col-xs-9">

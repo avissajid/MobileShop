@@ -8,7 +8,47 @@
 @section('content')
 
 
-     
+      <div id="slider_wrapper">
+      <div id="slider">
+         <div id="flexslider">
+            <ul class="slides clearfix">
+               <li>
+                  <img src="{{asset('flextop/images/slide01.jpg')}}" alt="">
+                  <div class="flex-caption">
+                     <!-- <div class="flex-caption_inner container">
+                        <div class="txt1">Sale up to 20% off!</div>
+                        <div class="txt2">Alienware Desktop</div>
+                        <div class="txt3">Save up to $599 off of select Alienware PCs for a limited time only.</div>
+                        <div class="txt4"><a href="#" class="btn-default btn0">Get it Now</a></div>
+                        </div> -->
+                  </div>
+               </li>
+               <li>
+                  <img src="{{asset('flextop/images/slide02.jpg')}}" alt="">
+                  <div class="flex-caption">
+                     <!-- <div class="flex-caption_inner container">
+                        <div class="txt1">Sale up to 30% off!</div>
+                        <div class="txt2">Futuro de la <br>Realidad virtual</div>
+                        <div class="txt3">Save up to $599 off of select La Realidad Virtual  for a limited time only.</div>
+                        <div class="txt4"><a href="#" class="btn-default btn0">Get it Now</a></div>
+                        </div> -->
+                  </div>
+               </li>
+               <li>
+                  <img src="{{asset('flextop/images/slide03.jpg')}}" alt="">
+                  <div class="flex-caption">
+                     <!-- <div class="flex-caption_inner container">
+                        <div class="hot-sale-wrapper"><span>Hot Sale</span></div>
+                        <div class="txt2">4K 360 video<br>Colorful designs</div>
+                        <div class="txt3">Now for manners use has company believe parlors. Least nor party<br>who wrote while did.</div>
+                        <div class="txt4"><a href="#" class="btn-default btn0">Get it Now</a></div>
+                        </div> -->
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
 
 
   <div class="main-content-inner">
@@ -52,59 +92,15 @@
             <div class="sidebar-filters">
 
               <div class="sidebar-filters-title">Price</div>
-
-              <div class="slider-range-txt">Range:  <span>  100.00 -   1.700.00</span></div>
-              <div id="slider-range"></div>
-              <div class="slider-range-text clearfix">
-                <input type="text" id="amount" readonly>
-                <input type="text" id="amount2" readonly>
-              </div>
+                   <select>
+                     <option value="2000-5000">2000-5000</option>
+                     <option value="5000-8000">5000-8000</option>
+                     <option value="8000-11000">8000-11000</option>
+                     <option value="12000-20000">12000-20000</option>
+                   </select>
               <div><a href="#" class="btn-default btn1">Filter</a></div>
 
-              <br>
-
-              <div class="sidebar-filters-title">Brands</div>
-
-              <ul class="ul2">
-                <li><a href="#">Sony <span>(09)</span></a></li>
-                <li><a href="#">Panasonic <span>(02)</span></a></li>
-                <li><a href="#">Apple <span>(10)</span></a></li>
-                <li><a href="#">Samsung <span>(12)</span></a></li>
-              </ul>
-
-              <br>
-
-              
              
-
-              <div class="sidebar-filters-title">Size</div>
-
-              <form>
-                <div class="checkbox2-custom-item">
-                  <input id="checkbox2-1" class="checkbox2-custom" name="checkbox2-1" type="checkbox">
-                  <label for="checkbox2-1" class="checkbox2-custom-label">S</label>
-                </div>
-                <div class="checkbox2-custom-item">
-                  <input id="checkbox2-2" class="checkbox2-custom" name="checkbox2-2" type="checkbox">
-                  <label for="checkbox2-2" class="checkbox2-custom-label">M</label>
-                </div>
-                <div class="checkbox2-custom-item">
-                  <input id="checkbox2-3" class="checkbox2-custom" name="checkbox2-3" type="checkbox" checked>
-                  <label for="checkbox2-3" class="checkbox2-custom-label">L</label>
-                </div>
-                <div class="checkbox2-custom-item">
-                  <input id="checkbox2-4" class="checkbox2-custom" name="checkbox2-4" type="checkbox">
-                  <label for="checkbox2-4" class="checkbox2-custom-label">XL</label>
-                </div>
-                <div class="checkbox2-custom-item">
-                  <input id="checkbox2-5" class="checkbox2-custom" name="checkbox2-5" type="checkbox">
-                  <label for="checkbox2-5" class="checkbox2-custom-label">XXL</label>
-                </div>
-
-
-              </form>
-
-
 
 
 
@@ -139,39 +135,34 @@
              
            
             <div class="row">
-              
-
              
  @foreach($prodct as $book)
 
   
 
-              <div class="col-sm-2">
+              <div class="col-sm-2" >
                 <div class="product">
                   <div class="product-inner">
                     <figure class="product-media">
-                     <a href="#" class="product-view"><img src= "{{asset('images') . '/'.$book->image}}"></a>  
+                    <a href="{{route('next',['id'=>$book->id])}}"><img src= "{{asset('images') . '/'.$book->image}}"></a>  
                       <div class="product-links">
-                        <a href="#"><i class="fa fa-heart-o"></i></a>
-                        <a href="#"><i class="fa fa-bar-chart"></i></a>
-                        <a href="#"><i class="fa fa-expand"></i></a>
                       </div>
                     </figure>
                     <div class="product-divider"></div>
                     <div class="product-caption">
-                      <div class="product-name"><a href="product-details.html">{{$book->product_name}} </a></div>
+                      <div class="product-name" ><label value="{{$book->brand_id}}"> {{$book->brand_id}} </label></div>
                       <div class="product-review clearfix">
-                        {{$book->model_name}}
+                        <a href="{{route('next',['id'=>$book->id])}}">{{$book->model_name}}</a>
                       </div>
-                      <div class="product-prices clearfix">
+                      <div >
                         <div class="product-price"> {{$book->price}}</div>
                         <div class="product-price-old">       </div>
                       </div>
-                      <div class="product-add-to-cart " style="width: 80px ; " ><a href="{{url('/cart')}}/{{$book->id}}">Add to Cart</a></div>
+                     
+
                     </div>
                   </div>
                 </div>
-                <a href="{{route('next',['id'=>$book->id])}}"><h6>detail</h6></a>
               </div>
 
 @endforeach
@@ -191,3 +182,4 @@
 </div>
 
 @endsection
+
