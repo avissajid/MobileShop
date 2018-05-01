@@ -103,6 +103,12 @@
                      </div>
                       </div>
 
+              <div class="form-group" style="padding-right: 100px;">
+               <label class="control-label col-xs-3" for="price">Display Type</label>
+               <div class="col-xs-7">
+                  <input type="text" class="form-control" id="price" name="Resolution" placeholder="Enter Display Type">
+               </div>
+            </div>
                <div class="form-group" style="padding-right: 100px;">
                <label class="control-label col-xs-3" for="price">Resolution</label>
                <div class="col-xs-7">
@@ -124,7 +130,7 @@
  
 
             <div class="form-group" style="padding-right: 100px;">
-               <label class="control-label col-xs-3" for="price">Touchscreen_ype:</label>
+               <label class="control-label col-xs-3" for="price">Touchscreen_Type:</label>
                <div class="col-xs-7">
                   <input type="text" class="form-control" id="price" name="Touchscreen_type" placeholder="Enter Product Touchscreen type">
                </div>
@@ -149,6 +155,51 @@
             </div>
            
                       </div>  
+                      <div class="container" style="padding-left: 70px;">
+               
+               <h3>DESIGN AND BUILD</h3><hr>
+               <div class="container">
+               <div class="form-group">
+                <div class="col-xs-8">
+                <div class="form-group" style="padding-right: 100px;">
+               <label class="control-label col-xs-3" for="Dimensions">Dimensions</label>
+               <div class="col-xs-7">
+                  <input type="text" class="form-control" id="Dimensions" name="Dimensions" placeholder="Enter Dimensions">
+
+               </div>
+            </div>
+            <div class="form-group" style="padding-right: 100px;">
+               <label class="control-label col-xs-3" for="Weight">Weight</label>
+               <div class="col-xs-7">
+                  <input type="text" class="form-control" id="Weight" name="Weight" placeholder="Enter Weight">
+                  
+               </div>
+            </div>
+            <div class="container" style="padding-left: 70px;">
+               
+               <h3>SOFTWARE</h3><hr>
+               <div class="container">
+               <div class="form-group">
+                <div class="col-xs-7">
+                     <div class="form-group" style="padding-right: 100px;">
+               <label class="control-label col-xs-3" for="price">Color_Reproduction</label>
+               <div class="col-xs-7">
+                  <input type="text" class="form-control" id="price" name="Color_Reproduction" placeholder="Enter Product Color_Reproduction">
+               </div>
+            </div>   
+                     </div>
+
+                      </div>
+             
+                     </div>
+                      </div>
+                       <div class="container" style="padding-left: 70px;">
+               
+               <h3>CAMERA</h3><hr>
+               <div class="container">
+               <div class="form-group">
+                <div class="col-xs-7">
+                     
               <div class="row">
                 <div class="col-sm-3">
             <div class="form-group">
@@ -168,9 +219,105 @@
                </div>
             </div>
           </div>
+
         </div>
+        <div class="form-group" style="padding-right: 100px;">
+               <label class="control-label col-xs-3" for="Primary">Primary</label>
+               <div class="col-xs-7">
+                  <input type="text" class="form-control" id="Primary" name="Primary" placeholder="Enter  Primary Camera">
+               </div>
+            </div>
+            <div class="form-group" style="padding-right: 100px;">
+               <label class="control-label col-xs-3" for="Front">Front</label>
+               <div class="col-xs-7">
+                  <input type="text" class="form-control" id="Front" name="Front" placeholder="Enter  Front Camera">
+               </div>
+            </div>
+            <div class="form-group" style="padding-right: 100px;">
+               <label class="control-label col-xs-3" for="Video">Video</label>
+               <div class="col-xs-7">
+                  <input type="text" class="form-control" id="Video" name="Video" placeholder="Enter  Video play quality">
+               </div>
+            </div>
+</div>
+</div>
+ <div class="container" style="padding-left: 70px;">
+               
+               <h3>STORAGE</h3><hr>
+               <div class="container">
+               <div class="form-group">
+                <div class="col-xs-7">
+                    <div class="form-group" style="padding-right: 100px;">
+               <label class="control-label col-xs-3" for="Internal">Internal</label>
+               <div class="col-xs-7">
+                  <input type="text" class="form-control" id="Internal" name="Internal" placeholder="Enter  Internal STORAGE">
+               </div>
+            </div>
+            <div class="form-group" style="padding-right: 100px;">
+               <label class="control-label col-xs-3" for="RAM">RAM</label>
+               <div class="col-xs-7">
+                  <input type="text" class="form-control" id="RAM" name="RAM" placeholder="Enter  RAM">
+               </div>
+            </div>
+            <div class="form-group" style="padding-right: 100px;">
+               <label class="control-label col-xs-3" for="Expandable">Expandable</label>
+               <div class="col-xs-7">
+                  <input type="text" class="form-control" id="Expandable" name="Expandable" placeholder="Enter Expandable Memory Upto">
+               </div>
+            </div>   
+
+                     </div>
+                      </div>
+<div>
+  
+
+</div>
+<div class="container" style="padding-left: 70px;">
+               
+               <h3>BATTERY</h3><hr>
+               <div class="container">
+               <div class="form-group">
+                <div class="col-xs-7">
+                    <div class="form-group" style="padding-right: 100px;">
+               <label class="control-label col-xs-3" for="Type">Type</label>
+               <div class="col-xs-7">
+                  <input type="text" class="form-control" id="Type" name="Type" placeholder="Enter  BATTERY Type">
+               </div>
+            </div>
+            <div class="form-group" style="padding-right: 100px;">
+               <label class="control-label col-xs-3" for="Capacity">Capacity</label>
+               <div class="col-xs-7">
+                  <input type="text" class="form-control" id="Capacity" name="Capacity" placeholder="Enter  Capacity">
+               </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+               <label class="control-label col-xs-3" for="msg">Turbo Charge </label>
+               <div class="col-xs-9">
+                  <input type="radio" name="Turbo" value="yes"> yes<br>
+                  <input type="radio" name="Turbo" value="no">no<br>
+               </div>
+            </div>
+              <div>
+             
+          </div>
+           </div>
+              
           <br>
+
           <h3>Conectivity</h3><hr>
+          <div class="form-group" style="padding-right: 100px;">
+               <label class="control-label col-xs-3" for="Bluetooth">Bluetooth</label>
+               <div class="col-xs-7">
+                  <input type="text" class="form-control" id="Bluetooth" name="Bluetooth" placeholder="Enter  Bluetooth value">
+               </div>
+            </div>
+            <div class="form-group" style="padding-right: 100px;">
+               <label class="control-label col-xs-3" for="SIM Configuration">SIM Configuration</label>
+               <div class="col-xs-7">
+                  <input type="text" class="form-control" id="Bluetooth" name="SIM" placeholder="Enter  SIM Type">
+               </div>
+            </div>
           <div class="row">
              <div class="col-sm-3">
              <div class="form-group">
@@ -212,11 +359,75 @@
                </div>
             </div>
           </div>
+           <div class="col-sm-3">
+             <div class="form-group">
+               <label class="control-label col-xs-3" for="msg">NFC Chipset</label>
+               <div class="col-xs-9">
+                  <input type="radio" name="NFC" value="yes"> yes<br>
+                  <input type="radio" name="NFC" value="no">no<br>
+               </div>
+            </div>
         </div>
-        <br>
-
+      </div>
+      <div class="col-sm-3">
+             <div class="form-group">
+               <label class="control-label col-xs-3" for="msg">USB</label>
+               <div class="col-xs-9">
+                  <input type="radio" name="USB" value="yes"> yes<br>
+                  <input type="radio" name="USB" value="no">no<br>
+               </div>
+            </div>
+      
+      </div>
+        <div class="container" style="padding-left: 70px;">
+               
+               <h3>Display</h3><hr>
+               <div class="container">
+               <div class="form-group">
+                <div class="col-xs-7">
+                       <div class="form-group" style="padding-right: 100px;">
+               <label class="control-label col-xs-3" for="Variant">Variant</label>
+               <div class="col-xs-7">
+                  <input type="text" class="form-control" id="Variant" name="Variant" placeholder="Enter  Variant">
+               </div>
+            </div>
+            <div class="form-group" style="padding-right: 100px;">
+               <label class="control-label col-xs-3" for="Architecture">Architecture</label>
+               <div class="col-xs-7">
+                  <input type="text" class="form-control" id="Architecture" name="Architecture" placeholder="Enter Architecture">
+               </div>
+            </div>
+            <div class="form-group" style="padding-right: 100px;">
+               <label class="control-label col-xs-3" for="Cores">No of Cores</label>
+               <div class="col-xs-7">
+                  <input type="text" class="form-control" id=" Cores" name="Cores" placeholder="Enter  No of Cores">
+               </div>
+            </div>
+              <div class="form-group" style="padding-right: 100px;">
+               <label class="control-label col-xs-3" for="Frequency">Frequency</label>
+               <div class="col-xs-7">
+                  <input type="text" class="form-control" id="Frequency" name="Frequency" placeholder="Enter Frequency">
+               </div>
+            </div>
+            <div class="form-group" style="padding-right: 100px;">
+               <label class="control-label col-xs-3" for="Front">Make</label>
+               <div class="col-xs-7">
+                  <input type="text" class="form-control" id="Make" name="Make" placeholder="Enter Make">
+               </div>
+            </div>
+            <div class="form-group" style="padding-right: 100px;">
+               <label class="control-label col-xs-3" for="GPU">GPU</label>
+               <div class="col-xs-7">
+                  <input type="text" class="form-control" id="GPU" name="GPU" placeholder="Enter GPU">
+               </div>
+            </div>  
+                     </div>
+                      </div>
+                    </div>
+                  </div>
+</div></div></div></div>
             <h3>Sound</h3><hr>
-           <div class="row">
+           <div class="row" style="padding-right: 500px" >
                 <div class="col-sm-3">
              <div class="form-group">
                <label class="control-label col-xs-4" for="msg">Infrared</label>
@@ -249,9 +460,12 @@
             </div>
           </div>
           </div>
+        <br>
+
+        
          <br>
             <h3>Sensors</h3><hr>
-            <div class="row">
+            <div class="row" style="padding-right: 500px">
                 <div class="col-sm-3">
             <div class="form-group">
                <label class="control-label col-xs-3" for="msg">Ambient Light</label>
@@ -261,6 +475,7 @@
                </div>
             </div>
           </div>
+
              <div class="col-sm-3">
              <div class="form-group">
                <label class="control-label col-xs-3" for="msg">Gyroscope</label>
