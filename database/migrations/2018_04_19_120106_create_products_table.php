@@ -21,8 +21,6 @@ class CreateProductsTable extends Migration
             $table->decimal('price');
 
             $table->string('details');
-
-            $table->string('model_name');
              $table->string('realflash');   
             
 
