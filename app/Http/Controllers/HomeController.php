@@ -38,7 +38,7 @@ class HomeController extends Controller
                 
              $Category->save();
 
-             return view('Home');
+             return view('AddProduct');
 
 
 
@@ -56,9 +56,14 @@ class HomeController extends Controller
             $Brand=new Brand();
              $Brand->brand_name=$request->input('brand_name');
                 $Brand->cat_id = $request->input('cat_id');
-             $Brand->save();
+             $Brand->save();            
 
-             return view('Home');
+              return view('AddProduct');
+
+
+
+
+
 
 
          }

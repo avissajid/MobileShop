@@ -19,7 +19,8 @@
       <div class="col-md-9">
          <h2 class="page-header" style="color:cadetblue">Add Product :</h2>
          <form class="form-horizontal" action="{{url('/addproduct')}}" method="POST" enctype="multipart/form-data">
-            @csrf
+            {{ csrf_field() }}
+
           <?php $cat=\App\Category::all() ?>
                
             <div class="form-group">
@@ -56,7 +57,7 @@
                     <a href="{{url('AddBrand')}}"><button type="button" class="btn btn-info">add new model</button></a>
                  
             </div>
-            
+            a
               
             <div class="form-group">
                <label class="control-label col-xs-3" for="price">Product Price:</label>
