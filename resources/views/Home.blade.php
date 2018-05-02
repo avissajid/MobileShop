@@ -67,8 +67,9 @@
           <div class="sidebar-title">
             Categories
           </div>
-
-            
+        <!--   
+https://www.youtube.com/watch?v=aUPfhGBz7sU
+         -->    
           <div class="sidebar-content">
             <ul class="ul1">
                <?php
@@ -76,9 +77,15 @@
                 ?>
 
 
+                    <select >
+
     @foreach($categry as $cats)
-              <li><a href="{{url('/main')}}/<?php echo "$cats->id" ?>"><?php echo "{$cats->cat_name}"?></a></li>
-              @endforeach
+    
+                      <option value="{$cats->id}">{{$cats->cat_name}}</option>
+                      @endforeach
+                    </select>
+          <!--   <li><a href="{{url('/main')}}/<?php echo "$cats->id" ?>"><?php echo "{$cats->cat_name}"?></a></li>
+           -->  
             </ul>
           </div>
         </div>
@@ -150,9 +157,20 @@
                     </figure>
                     <div class="product-divider"></div>
                     <div class="product-caption">
-                      <div class="product-name" ><label value="{{$book->brand_id}}"> {{$book->brand_id}} </label></div>
+                     
+                        <a href="{{route('next',['id'=>$book->id])}}"> <div class="product-name" ><label value="{{$book->brand_id}}"> 
+
+
+                        <?php 
+
+                              $productName=DB::table('brands')->where('id', '=', $book->brand_id)->get();
+                              echo $productName[0]->brand_name; 
+
+                        ?></a>
+
+
+                          </label></div>
                       <div class="product-review clearfix">
-                        <a href="{{route('next',['id'=>$book->id])}}">{{$book->model_name}}</a>
                       </div>
                       <div >
                         <div class="product-price"> {{$book->price}}</div>

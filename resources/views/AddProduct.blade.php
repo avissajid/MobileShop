@@ -19,7 +19,8 @@
       <div class="col-md-9">
          <h2 class="page-header" style="color:cadetblue">Add Product :</h2>
          <form class="form-horizontal" action="{{url('/addproduct')}}" method="POST" enctype="multipart/form-data">
-            @csrf
+            {{ csrf_field() }}
+
           <?php $cat=\App\Category::all() ?>
                
             <div class="form-group">
@@ -34,9 +35,9 @@
                   </select>
                </div>
             </div>
-                   <div class="form-group">
+                   <div class="form-group" style="padding-left:700px">
             
-                    <a href="{{url('AddCategory')}}"><button type="button" class="btn btn-info">add new category</button></a>
+                    <a href="{{url('AddCategory')}}"><button type="button" class="btn btn-info">Add new category</button></a>
                  
             </div>
 
@@ -51,13 +52,12 @@
                   </select>
                </div>
             </div>
-            <div class="form-group">
-               <label class="control-label col-xs-3" for="name">Product Model:</label>
-               <div class="col-xs-9">
-                  <input type="text" class="form-control" id="name" name="model_name" placeholder="Enter Product Name">
-                
-               </div>
+            <div class="form-group" style="padding-left:700px">
+            
+                    <a href="{{url('AddBrand')}}"><button type="button" class="btn btn-info">add new model</button></a>
+                 
             </div>
+            a
               
             <div class="form-group">
                <label class="control-label col-xs-3" for="price">Product Price:</label>
@@ -83,6 +83,7 @@
             <div class="container" style="padding-left: 70px;">
                
                <h3>Display</h3><hr>
+                <h3>Display</h3><hr>
                <div class="container">
                <div class="form-group">
                 <div class="col-xs-7">
