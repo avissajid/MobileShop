@@ -37,7 +37,7 @@
             </div>
                    <div class="form-group" style="padding-left:700px">
             
-                    <a href="{{url('AddCategory')}}"><button type="button" class="btn btn-info">add new category</button></a>
+                    <a href="{{url('AddCategory')}}"><button type="button" class="btn btn-info">Add new category</button></a>
                  
             </div>
 

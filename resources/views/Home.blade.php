@@ -80,6 +80,7 @@ https://www.youtube.com/watch?v=aUPfhGBz7sU
                     <select >
 
     @foreach($categry as $cats)
+    
                       <option value="{$cats->id}">{{$cats->cat_name}}</option>
                       @endforeach
                     </select>
