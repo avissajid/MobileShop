@@ -244,7 +244,7 @@
  <div class="container" style="padding-left: 70px;">
                
                <h3>STORAGE</h3><hr>
-               <h3>STORAGE</h3><hr>
+               
                <div class="container">
                <div class="form-group">
                 <div class="col-xs-7">
