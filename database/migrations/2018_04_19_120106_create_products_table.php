@@ -19,6 +19,9 @@ class CreateProductsTable extends Migration
         
              $table->string('image')->nullable();
             $table->string('Weight');
+            $table->string('OS');
+            $table->string('SIM');
+            $table->string('Protection');
             $table->string('Dimensions');
             $table->string('Primary');
             $table->string('Front');
@@ -31,7 +34,7 @@ class CreateProductsTable extends Migration
             $table->string('Type');
             $table->string('Turbo');
             $table->string('Bluetooth');
-            $table->string('NFC');
+            
             $table->string('USB');
             $table->string('Variant');
             $table->string('Architecture');

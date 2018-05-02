@@ -68,7 +68,7 @@
       <div id="DIV_78">
         <div id="DIV_79">
           <div id="DIV_80">
-             <span id="SPAN_81">Best Price:</span> <span id="SPAN_82">Rs:</span> <span id="SPAN_83"></span>
+             <span id="SPAN_81">Best Price:</span> <span id="SPAN_82">Rs:<?php echo ($data->price) ?></span> <span id="SPAN_83"></span>
           </div>
           <div id="DIV_84">
             <div id="DIV_85">
@@ -105,7 +105,7 @@
             <div id="DIV_102">
               <div id="DIV_103">
                 <div id="DIV_104">
-                  SIZES
+              SIZES:<?php echo ($data->Size) ?>
                 </div>
               </div>
               <div id="DIV_105">
@@ -173,28 +173,28 @@
             </h3>
             <ul id="UL_137">
               <li id="LI_138">
-                Exynos 9810 processor
+                <?php echo ($data->Variant) ?>
               </li>
               <li id="LI_139">
-                4GB RAM
+               <?php echo ($data->RAM) ?>
               </li>
               <li id="LI_140">
-                64GB internal storage
+                <?php echo ($data->Internal) ?>
               </li>
               <li id="LI_141">
-                3000 mAh battery
+               <?php echo ($data->Capacity) ?>
               </li>
               <li id="LI_142">
-                12 M.Pixels rear &amp; 8 M.Pixels selfie
+                <?php echo ($data->Primary) ?> &amp; <?php echo ($data->Front) ?>
               </li>
               <li id="LI_143">
-                5.8 inch screen
+               <?php echo ($data->Size) ?> inch screen
               </li>
               <li id="LI_144">
-                Dual SIM (Nano SIM)
+                <?php echo ($data->SIM) ?>
               </li>
               <li id="LI_145">
-                Android OS, v8.0 (Oreo)
+                <?php echo ($data->OS) ?>
               </li>
             </ul>
           </div>
@@ -238,7 +238,20 @@
           
            <div id="DIV_211">
               <h2 id="H2_212">
-                Samsung Galaxy S9 Specifications
+                  <?php 
+
+                              $productName=DB::table('categories')->where('id', '=', $data->cat_id)->get();
+                              echo $productName[0]->cat_name; 
+
+                        ?></a>
+
+
+                  <?php 
+
+                              $productName=DB::table('brands')->where('id', '=', $data->brand_id)->get();
+                              echo $productName[0]->brand_name; 
+
+                        ?></a> Specifications
               </h2>
               <table id="TABLE_213">
                 <tbody id="TBODY_214">
@@ -300,7 +313,7 @@
                       Protection
                     </td>
                     <td id="TD_237">
-                      Corning Gorilla Glass 5
+                      <?php echo ($data->Protection) ?>
                     </td>
                   </tr>
                   <tr id="TR_238">
@@ -329,7 +342,7 @@
                       Weight
                     </td>
                     <td id="TD_251">
-                      <span id="SPAN_252">163 grams</span>
+                      <span id="SPAN_252"><?php echo ($data->Weight) ?></span>
                     </td>
                   </tr>
                   <tr id="TR_253">
@@ -342,7 +355,7 @@
                       Operating System
                     </td>
                     <td id="TD_257">
-                      Android OS, v8.0 (Oreo)
+                      <?php echo ($data->OS) ?>
                     </td>
                   </tr>
                   <tr id="TR_258">
@@ -371,7 +384,7 @@
                       Primary
                     </td>
                     <td id="TD_268">
-                      12 M.Pixels
+                      <?php echo ($data->Primary) ?>
                     </td>
                   </tr>
                   <tr id="TR_269">
@@ -379,7 +392,7 @@
                       Front
                     </td>
                     <td id="TD_271">
-                      8 M.Pixels
+                     <?php echo ($data->Front) ?>
                     </td>
                   </tr>
                   <tr id="TR_272">
@@ -387,7 +400,7 @@
                       Video
                     </td>
                     <td id="TD_274">
-                      2160p@60fps, 1080p@240fps
+                     <?php echo ($data->Video) ?>
                     </td>
                   </tr>
                   <tr id="TR_275">
@@ -400,7 +413,7 @@
                       Internal
                     </td>
                     <td id="TD_279">
-                      64GB
+                     <?php echo ($data->Internal) ?>
                     </td>
                   </tr>
                   <tr id="TR_280">
@@ -408,7 +421,7 @@
                       RAM
                     </td>
                     <td id="TD_282">
-                      4GB
+                      <?php echo ($data->RAM) ?>
                     </td>
                   </tr>
                   <tr id="TR_283">
@@ -416,7 +429,7 @@
                       Expandable
                     </td>
                     <td id="TD_285">
-                      MicroSD, 256GB
+                      <?php echo ($data->Expandable) ?>
                     </td>
                   </tr>
                   <tr id="TR_286">
@@ -429,7 +442,7 @@
                       Type
                     </td>
                     <td id="TD_290">
-                      Li-Ion
+                    <?php echo ($data->Type) ?>
                     </td>
                   </tr>
                   <tr id="TR_291">
@@ -437,7 +450,7 @@
                       Capacity
                     </td>
                     <td id="TD_293">
-                      3000 mAh
+                     <?php echo ($data->Capacity) ?>
                     </td>
                   </tr>
                   <tr id="TR_294">
@@ -458,17 +471,10 @@
                       Bluetooth
                     </td>
                     <td id="TD_301">
-                      v5.0 with A2DP
+                      <?php echo ($data->Bluetooth) ?>
                     </td>
                   </tr>
-                  <tr id="TR_302">
-                    <td id="TD_303">
-                      Wi-Fi
-                    </td>
-                    <td id="TD_304">
-                      Yes with dual-band, Wi-Fi Direct, hotspot
-                    </td>
-                  </tr>
+                
                   <tr id="TR_305">
                     <td id="TD_306">
                       3G
@@ -482,7 +488,7 @@
                       USB
                     </td>
                     <td id="TD_310">
-                      Type-C
+                      <?php echo ($data->USB) ?>
                     </td>
                   </tr>
                   <tr id="TR_311">
@@ -514,7 +520,7 @@
                       SIM Configuration
                     </td>
                     <td id="TD_322">
-                      Dual SIM (Nano SIM)
+                      <?php echo ($data->SIM) ?>
                     </td>
                   </tr>
                   <tr id="TR_323">
@@ -530,7 +536,7 @@
                       NFC Chipset
                     </td>
                     <td id="TD_328">
-                      Yes
+                      <?php echo ($data->NFC) ?>
                     </td>
                   </tr>
                   <tr id="TR_329">
@@ -551,7 +557,7 @@
                       Variant
                     </td>
                     <td id="TD_336">
-                      Exynos 9810
+                      <?php echo ($data->Variant) ?>
                     </td>
                   </tr>
                   <tr id="TR_337">
@@ -559,7 +565,7 @@
                       Architecture
                     </td>
                     <td id="TD_339">
-                      Cortex-A55
+                      <?php echo ($data->Architecture) ?>
                     </td>
                   </tr>
                   <tr id="TR_340">
@@ -567,7 +573,7 @@
                       No of Cores
                     </td>
                     <td id="TD_342">
-                      8 (Octa Core)
+                      <?php echo ($data->Cores) ?>
                     </td>
                   </tr>
                   <tr id="TR_343">
@@ -575,7 +581,7 @@
                       Make
                     </td>
                     <td id="TD_345">
-                      Samsung
+                      <?php echo ($data->Make) ?>
                     </td>
                   </tr>
                   <tr id="TR_346">
@@ -583,7 +589,7 @@
                       Frequency
                     </td>
                     <td id="TD_348">
-                      2.8 GHz (Quad Core) + 1.7 GHz (Quad Core)
+                      <?php echo ($data->Frequency) ?>
                     </td>
                   </tr>
                   <tr id="TR_349">
@@ -591,7 +597,7 @@
                       GPU
                     </td>
                     <td id="TD_351">
-                      Mali-G72 MP18
+                      <?php echo ($data->GPU) ?>
                     </td>
                   </tr>
                   <tr id="TR_352">
@@ -604,7 +610,7 @@
                       Proximity
                     </td>
                     <td id="TD_356">
-                      Yes
+                      <?php echo ($data->Proximity) ?>
                     </td>
                   </tr>
                   <tr id="TR_357">

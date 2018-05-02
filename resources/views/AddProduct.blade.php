@@ -80,9 +80,9 @@
             </div>
            <br>
             
-            <div class="container" style="padding-left: 70px;">
+            <div class="container" style="padding-left: 80px;">
                
-               <h3>Display</h3><hr>
+              
                 <h3>Display</h3><hr>
                <div class="container">
                <div class="form-group">
@@ -145,13 +145,13 @@
             <div class="form-group" style="padding-right: 100px;">
                <label class="control-label col-xs-3" for="price">Screen to body percentage</label>
                <div class="col-xs-7">
-                  <input type="text" class="form-control" id="price" name="Screen_to_body_percentage" placeholder="Enter Product Price">
+                  <input type="text" class="form-control" id="price" name="Screen_to_body_percentage" placeholder="Enter Screen to body percentage (Pixel)">
                </div>
             </div>
             <div class="form-group" style="padding-right: 100px;">
-               <label class="control-label col-xs-3" for="price">Color_Reproduction</label>
+               <label class="control-label col-xs-3" for="Protection">Protection</label>
                <div class="col-xs-7">
-                  <input type="text" class="form-control" id="price" name="Color_Reproduction" placeholder="Enter Product Color_Reproduction">
+                  <input type="text" class="form-control" id="Protection" name="Protection" placeholder="Enter Protection version">
                </div>
             </div>
            
@@ -183,9 +183,9 @@
                <div class="form-group">
                 <div class="col-xs-7">
                      <div class="form-group" style="padding-right: 100px;">
-               <label class="control-label col-xs-3" for="price">Color_Reproduction</label>
+               <label class="control-label col-xs-3" for="OS">Operating System</label>
                <div class="col-xs-7">
-                  <input type="text" class="form-control" id="price" name="Color_Reproduction" placeholder="Enter Product Color_Reproduction">
+                  <input type="text" class="form-control" id="OS" name="OS" placeholder="Enter OS version">
                </div>
             </div>   
                      </div>
@@ -317,7 +317,7 @@
             <div class="form-group" style="padding-right: 100px;">
                <label class="control-label col-xs-3" for="SIM Configuration">SIM Configuration</label>
                <div class="col-xs-7">
-                  <input type="text" class="form-control" id="Bluetooth" name="SIM" placeholder="Enter  SIM Type">
+                  <input type="text" class="form-control" id="SIM" name="SIM" placeholder="Enter  SIM Type">
                </div>
             </div>
           <div class="row">
@@ -370,7 +370,7 @@
                </div>
             </div>
         </div>
-      </div>
+     
       <div class="col-sm-3">
              <div class="form-group">
                <label class="control-label col-xs-3" for="msg">USB</label>
@@ -381,6 +381,7 @@
             </div>
       
       </div>
+    </div>
         <div class="container" style="padding-left: 70px;">
                
                <h3>Display</h3><hr>

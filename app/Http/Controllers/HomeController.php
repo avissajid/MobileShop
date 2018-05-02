@@ -115,6 +115,30 @@ class HomeController extends Controller
          }
 
 
+                    $product->Weight=$request->input('Weight');
+                    $product->OS=$request->input('OS');
+                    $product->Protection=$request->input('Protection');
+                    $product->SIM=$request->input('SIM');
+                    $product->Dimensions=$request->input('Dimensions');
+                    $product->Primary=$request->input('Primary');
+                    $product->Front=$request->input('Front');
+                    $product->Video=$request->input('Video');
+                    $product->Internal=$request->input('Internal');
+                    $product->RAM=$request->input('RAM');
+                    $product->Expandable=$request->input('Expandable');
+                    $product->Capacity=$request->input('Capacity');
+                    $product->Type=$request->input('Type');
+                    $product->Turbo=$request->input('Turbo');
+                    $product->Bluetooth=$request->input('Bluetooth');
+                    $product->NFC=$request->input('NFC');
+                    $product->USB=$request->input('USB');
+                    $product->Variant=$request->input('Variant');
+                    $product->Cores=$request->input('Cores');
+                    $product->Frequency=$request->input('Frequency');
+                    $product->Make=$request->input('Make');
+                    $product->GPU=$request->input('GPU');
+                    $product->Architecture=$request->input('Architecture');
+                    
                      $product->realflash=$request->input('realflash');
                      $product->G2=$request->input('G2');
                      $product->G3=$request->input('G3');
@@ -140,7 +164,7 @@ class HomeController extends Controller
                      $product->Resolution=$request->input('Resolution');
                      $product->Pixel_Density=$request->input('Pixel_Density');
                      $product->Touchscreen_type=$request->input('Touchscreen_type');
-                     $product->Color_Reproduction=$request->input('Color_Reproduction');
+                     $product->Color_Reproduction="Color_Reproduction";
                      $product->Screen_to_body_percentage=$request->input('Screen_to_body_percentage');
 
                      $product->save();

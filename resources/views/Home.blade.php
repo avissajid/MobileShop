@@ -84,9 +84,7 @@ https://www.youtube.com/watch?v=aUPfhGBz7sU
                       <option value="{$cats->id}">{{$cats->cat_name}}</option>
                       @endforeach
                     </select>
-          <!--   <li><a href="{{url('/main')}}/<?php echo "$cats->id" ?>"><?php echo "{$cats->cat_name}"?></a></li>
-           -->  
-            </ul>
+        
           </div>
         </div>
     
