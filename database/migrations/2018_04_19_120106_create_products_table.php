@@ -26,7 +26,7 @@ class CreateProductsTable extends Migration
             $table->string('Internal');
             $table->string('RAM');
             $table->string('Expandable');
-            $table->string('Type');
+            
             $table->string('Capacity');
             $table->string('Type');
             $table->string('Turbo');
