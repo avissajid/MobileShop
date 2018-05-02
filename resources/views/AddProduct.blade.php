@@ -54,8 +54,8 @@
             </div>
             <div class="form-group" style="padding-left:700px">
             
-                   <!--  <a href="{{url('AddBrand')}}"><button type="button" class="btn btn-info">add new model</button></a>
-                  -->
+                    <a href="{{url('AddBrand')}}"><button type="button" class="btn btn-info">add new model</button></a>
+                 
             </div>
             a
               
